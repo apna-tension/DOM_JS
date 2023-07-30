@@ -1,9 +1,8 @@
 let buttons = document.querySelectorAll('.button');
-console.log(buttons);
+// console.log(buttons);
 // console.log("Hello, world!");
 const body = document.querySelector('body');
-// console.log(body);
-
+body.style.backgroundColor = 'black';
 buttons.forEach( (button) =>  {
     console.log(button);
     button.addEventListener('click', (e) => {

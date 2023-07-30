@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>first</title>
+    <title>Color_Changer</title>
     <style>
         .container {
             display: flex;
@@ -18,7 +18,7 @@
             height: max-content;
 
         }
-        .button {
+        .button{
             width: 100px;
             height: 100px;
             margin: 10px;
@@ -37,6 +37,19 @@
         #yellow {
             background-color: yellow;
         }
+        #black {
+            background-color: black;
+            color: white;
+            border: 1px solid wheat !important;
+            padding: 5px 5px;
+            font-size: 1.5rem;
+            border-radius: 5px;
+        }
+        #black:hover {
+            cursor: pointer;
+            background-color: transparent;
+            color: black;
+        }
     </style>
 </head>
 
@@ -46,6 +59,7 @@
         <div class="button" id="white"></div>
         <div class="button" id="blue"></div>
         <div class="button" id="yellow"></div>
+        <button class="button" id="black">default</button>
     </div>
     <script src="index.js"></script>
 </body>
