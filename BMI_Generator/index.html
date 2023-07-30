@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>second</title>
+    <title>BMI_Generator</title>
     <style>
         .container {
             width: 100%;
@@ -15,47 +15,57 @@
         }
 
         input {
-            /* width: 100%; */
+            width: 40vw;
             padding: 10px;
             margin: 10px 0;
-            border-radius: 5px;
+            border-radius: 10px;
             border: 1px solid #ccc;
             font-size: 1.3rem;
             font-weight: bold;
+            background-color: black;
+            color: white;
         }
 
         button {
             font-size: 1.5rem;
-            padding: 5px;
-            border-radius: 5px;
+            padding: 15px;
+            border-radius: 10px;
             border: none;
             margin: auto;
             cursor: pointer;
+            background-color: rgb(200, 80, 29);
+        }
+
+        button:hover {
+            background-color: rgb(200, 60, 15);
         }
     </style>
 </head>
 
-<body style="background-color: gray;">
+<body style="background-color: rgb(71, 202, 60);">
 
     <div class="container">
         <h1>BMI Calculator</h1>
         <form>
+            <p style="color: rgb(116, 16, 16); font-weight: bold;">************If you don't know your height in
+                centimeter then enter your height in feet section*****************</p>
             <p>
-                <lable>Enter height in feet : </lable><input placeholder="enter in feet" type="text" id="feet" />
+                <lable>Enter height in feet : </lable><input placeholder="Don't know height in centimeter ? "
+                    type="text" id="feet" />
             </p>
-            <button>Calculate</button>
+            <button>Convert Feet to Centimeter</button>
         </form>
         <div id="feetRes"></div>
         <form>
             <p><label>Height in CM : </label><input placeholder="Enter height" type="text" id="height" /></p>
             <p><label>Weight in KG : </label><input placeholder="Enter weight" type="text" id="weight" /></p>
-            <button>Calculate</button>
+            <button>Calculate BMI</button>
             <div id="results"></div>
             <div id="weight-guide">
                 <h3>Weight Guide</h3>
                 <p style="color: yellow; font-weight: bold;">Underweight = less than 18.5</p>
-                <p style="color: rgb(53, 253, 53); font-weight: bold;">Normal weight = 18.5–24.9</p>
-                <p style="color: orange; font-weight: bold;">Overweight = 25–29.9</p>
+                <p style="color: rgb(2, 111, 2); font-weight: bold;">Normal weight = 18.5–24.9</p>
+                <p style="color: rgba(0, 17, 255, 0.648); font-weight: bold;">Overweight = 25–29.9</p>
                 <p style="color: rgb(109, 6, 6); font-weight: bold;">Obesity = BMI of 30 or greater</p>
             </div>
         </form>
